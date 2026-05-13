@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import NameChange from './components/NameChange';
+import CounterFour from './components/CounterFour';
+import CounterOne from './components/CounterOne';
+import CounterThree from './components/CounterThree';
+import CounterTwo from './components/CounterTwo';
+import CounterFive from './components/CounterFive';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NameChange />
+      <CounterOne />
+      <CounterTwo />
+      <CounterThree />
+      <CounterFour />
+      <CounterFive/>
+    </>
   );
 }
 

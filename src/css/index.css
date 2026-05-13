@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import './reset.css';
+
+:root {
+    /* CSS Variables */
+    --primary-text-color: #fff;
+    --footer-color: #22224c;
+    --background-color: #1a1a2e;
+    --app-color1: #09637E;
+    --app-color2: #088395;
+    --app-color3: #7AB2B2;
+    --app-color4: #62fcea;
+    --app-color5: #7687f6;
+    --app-color6: #400546;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--app-color5);
+    color: var(--primary-text-color);
+    margin: 0 auto;
+    width: auto;
+}
+
+section {
+    background-color: var(--footer-color);
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Button */
+
+input[type=button] {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: var(--app-color2);
+    color: var(--primary-text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0.5rem;
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+input[type=button]:hover {
+    background-color: var(--app-color5);
+}
+
+#reset {
+    background-color: var(--app-color5);
+}
+
+#reset:hover {
+    background-color: var(--app-color6);
+}
+
+
+/* Text */
+
+#text {
+    font-size: 1.2rem;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+
+
+/* Input */
+.word-input {
+    background: var(--background-text);
+    border: 2px solid var(--bg2);
+    border-radius: 12px;
+    color: var(--primary-text-color);
+    padding: 1rem;
+    width: 90%;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
